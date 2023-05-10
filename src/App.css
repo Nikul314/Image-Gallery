@@ -1,38 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  font-family: 'Dancing Script', cursive;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.shadow{
+  box-shadow: inset 3px 3px 10px rgba(194, 197, 200, 0.5), inset -5px -5px 10px rgb(255 255 255 / 70%);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-shadow{
+  box-shadow: 3px 3px 10px rgba(194, 197, 200, 0.5), -4px -4px 10px rgb(255 255 255 / 70%);
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-shadow:active{
+  box-shadow: inset 3px 3px 10px rgba(194, 197, 200, 0.5), inset -5px -5px 10px rgb(255 255 255 / 70%);
+  padding: .5rem 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
